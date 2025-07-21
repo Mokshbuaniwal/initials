@@ -1,18 +1,18 @@
 import random
 
 # Get user input
-user = input("Enter Rock, Paper, or Scissors: ").lower()
+user = input("Enter Rock, Paper, or Scissors: ")
 
-# Validate user input
+# user input while if 
 while user not in ['rock', 'paper', 'scissors']:
     print("Invalid choice! Try again.")
-    user = input("Enter Rock, Paper, or Scissors: ").lower()
+    user = input("Enter Rock, Paper, or Scissors: ")
 
 # Generate computer choice
 computer_choice = random.choice(['rock', 'paper', 'scissors'])
 
 # Show choices
-print(f"\nYou chose: {user}")
+print(f"You chose: {user}")
 print(f"Computer chose: {computer_choice}")
 
 # Determine winner
