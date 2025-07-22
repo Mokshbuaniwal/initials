@@ -15,7 +15,6 @@ computer_choice = random.choice(['rock', 'paper', 'scissors'])
 print(f"You chose: {user}")
 print(f"Computer chose: {computer_choice}")
 
-# Determine winner
 if user == computer_choice:
     print("It's a tie!")
 elif (user == 'rock' and computer_choice == 'scissors') or \
