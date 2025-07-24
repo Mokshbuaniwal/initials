@@ -7,25 +7,28 @@ a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 c = input("Enter operation (add , sub , multi , div , div with nearest integer , exponation , reminder ,  percentage , factorial): ")
 
-if c == "add":
+
+
+if c == "add" or c == "+":
     print(f"Result: {a + b}")
-elif c == "sub":
+elif c == "sub" or c == "-":
+
     print(f"Result: {a - b}")
-elif c == "multi":
+elif c == "multi" or c == "*":
     print(f"Result: {a * b}")
-elif c == "div":
+elif c == "div" or c == "/":
     if b != 0:
         print(f"Result: {a / b}")
     else:
         print("Error: Division by zero is not allowed.")
 elif c == "div with nearest integer":
-    if b != 0:
+    if b != 0 :
         print(f"Result: {a // b}")
     else:
         print("Error: Division by zero is not allowed.")
 elif c == "exponation":
     print(f"Result: {a ** b}")
-elif c == "reminder":
+elif c == "reminder" or c == "%":
     if b != 0:
         print(f"Result: {a % b}")
     else:
@@ -43,4 +46,3 @@ elif c == "factorial":
         print("Error: Factorial is not defined for negative numbers.")
 else:
     print("Invalid operation! Please choose from add, sub, multi, div, div with nearest integer, exponation, or reminder.")
-
