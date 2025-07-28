@@ -9,3 +9,6 @@ while True:
 print("Your To-Do List:")
 for i, task in enumerate(todo, 1):
     print(f"{i}. {task}")
+    todo[i-1] = task
+    todo[i-1] = task.upper()  # Convert task to uppercase           
+    
