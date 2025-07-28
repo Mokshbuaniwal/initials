@@ -17,7 +17,7 @@ print(f"Computer chose: {computer_choice}")
 
 if user == computer_choice:
     print("It's a tie!")
-elif (user == 'rock' and computer_choice == 'scissors') or \
+elif (user == 'rock' or 'ROCK' and computer_choice == 'scissors') or \
      (user == 'paper' and computer_choice == 'rock') or \
      (user == 'scissors' and computer_choice == 'paper'):
     print("You win!")
